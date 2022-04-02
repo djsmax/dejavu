@@ -170,21 +170,6 @@ or in scripting, assuming you've already instantiated a Dejavu object:
 >>> song = djv.recognize(FileRecognizer, "va_us_top_40/wav/Mirrors - Justin Timberlake.wav")
 ```
 
-### Recognizing: Through a Microphone
-
-With scripting:
-
-```python
->>> from dejavu.logic.recognizer.microphone_recognizer import MicrophoneRecognizer
->>> song = djv.recognize(MicrophoneRecognizer, seconds=10) # Defaults to 10 seconds.
-```
-
-and with the command line script, you specify the number of seconds to listen:
-
-```bash
-$ python dejavu.py --recognize mic 10
-```
-
 ## Testing
 
 Testing out different parameterizations of the fingerprinting algorithm is often useful as the corpus becomes larger and larger, and inevitable tradeoffs between speed and accuracy come into play. 

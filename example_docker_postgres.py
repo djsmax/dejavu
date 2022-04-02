@@ -2,7 +2,6 @@ import json
 
 from dejavu import Dejavu
 from dejavu.logic.recognizer.file_recognizer import FileRecognizer
-from dejavu.logic.recognizer.microphone_recognizer import MicrophoneRecognizer
 
 # load config from a JSON file (or anything outputting a python dictionary)
 config = {
